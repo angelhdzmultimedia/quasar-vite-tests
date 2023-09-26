@@ -16,7 +16,7 @@ export class TestCollection {
 }
 
 export const useTestStore = defineStore('test', () => {
-  const testCollection = ref(new TestCollection())
+  const testCollection = new TestCollection()
 
   return {
     testCollection,
